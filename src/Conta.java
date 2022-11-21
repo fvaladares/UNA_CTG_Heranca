@@ -18,12 +18,12 @@ public class Conta {
         this.saldo = 0;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Conta{" +
-//                "numeroConta=" + numeroConta +
-//                ", titular='" + titular + '\'' +
-//                ", saldo=" + saldo +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "numeroConta=" + numeroConta +
+                ", titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
 }

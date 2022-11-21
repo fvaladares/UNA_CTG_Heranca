@@ -4,5 +4,6 @@ public class Main {
         c = new Conta(1234,
                 "Fabricio Valadres",
                 10000);
+        System.out.println("Dados da conta: " + c);
     }
 }
