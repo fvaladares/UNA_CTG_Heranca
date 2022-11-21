@@ -18,12 +18,24 @@ public class Conta {
         this.saldo = 0;
     }
 
-    @Override
+    public double getSaldo() {
+        return saldo;
+    }
+
     public String toString() {
         return "Conta{" +
                 "numeroConta=" + numeroConta +
                 ", titular='" + titular + '\'' +
                 ", saldo=" + saldo +
                 '}';
+    }
+
+    public boolean sacar(double valor) {
+        if (this.saldo - valor > 0) {
+            this.saldo -= valor;
+            return true;
+        } else {
+            return false;
+        }
     }
 }
