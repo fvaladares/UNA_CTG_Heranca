@@ -1,0 +1,2 @@
+# UNA_CTG_Heranca
+EXEMPLO DO USO DE HERANÇA
