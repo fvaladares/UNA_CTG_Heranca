@@ -30,12 +30,17 @@ public class Conta {
                 '}';
     }
 
-    public boolean sacar(double valor) {
-        if (this.saldo - valor > 0) {
+    public boolean sacar(double valor, double limite) {
+        if (this.saldo + limite - valor > 0) {
             this.saldo -= valor;
             return true;
         } else {
             return false;
         }
     }
+
+    public boolean sacar(double valor) {
+        return sacar(valor, 0);
+    }
+
 }

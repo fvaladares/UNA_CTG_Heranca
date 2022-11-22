@@ -3,9 +3,11 @@ public class ContaCorrente extends Conta {
 
     @Override
     public boolean sacar(double valor) {
-        if(super.getSaldo() + limite > 0 ){
+        return super.sacar(valor, this.limite);
+    }
 
-        }
-        return false;
+    @Override
+    public double getSaldo() {
+        return super.getSaldo() + limite;
     }
 }
