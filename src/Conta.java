@@ -43,4 +43,8 @@ public class Conta {
         return sacar(valor, 0);
     }
 
+    public void depositar(double valor) {
+        this.saldo += valor;
+    }
+
 }
